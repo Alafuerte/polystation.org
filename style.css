@@ -1,11 +1,11 @@
 :root {
-  --background: #FDF5E6;       /* Light cream from poster */
-  --text: #222;                /* High contrast text */
-  --header-bg: #002E86;        /* Deep poster blue */
-  --primary-accent: #C1272D;   /* Deep poster red */
-  --secondary-accent: #F2721D; /* Bright orange from poster */
-  --link-color: #002E86;       /* Poster blue */
-  --link-hover: #AA1F2F;       /* Darker red for hover */
+  --background: #FDF5E6;
+  --text: #222;
+  --header-bg: #002E86;
+  --primary-accent: #C1272D;
+  --secondary-accent: #F2721D;
+  --link-color: #002E86;
+  --link-hover: #AA1F2F;
 }
 
 body {
