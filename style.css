@@ -120,3 +120,20 @@ footer a:focus {
     margin: 0 0.5rem;
   }
 }
+.hero {
+  background-image: url('hero.png'); /* assumes hero.png is in root folder */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
