@@ -265,11 +265,34 @@ a:focus {
   padding: 2rem 1rem;
   text-align: center;
   border-radius: 8px;
+  max-width: 800px;
+  margin: 3rem auto;
+}
+
+.newsletter h2 {
+  color: #ffffff;
+  margin-bottom: 0.5rem;
 }
 
 .newsletter p {
   color: #f5e9dc;
   margin-bottom: 1rem;
+}
+
+/* Targets the EmailOctopus embedded form */
+.newsletter div[data-form] {
+  display: flex;
+  justify-content: center;
+}
+
+/* Optional: constrain max width of embedded form */
+.newsletter iframe,
+.newsletter form,
+.newsletter div {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 /* Blockquotes for testimonials */
