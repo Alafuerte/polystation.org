@@ -121,7 +121,7 @@ footer a:focus {
   }
 }
 .hero {
-  background-image: url('hero.png'); /* assumes hero.png is in root folder */
+  background-image: url('hero.png'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
