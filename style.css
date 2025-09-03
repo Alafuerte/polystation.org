@@ -1,16 +1,28 @@
+/*
+ * PolyStation website stylesheet
+ *
+ * This stylesheet defines the visual design for the PolyStation website.
+ * It uses a custom colour palette inspired by the organisation's event
+ * poster and implements accessible defaults. Colours are stored in CSS
+ * variables for easy reuse and adjustment. The design prioritises
+ * readability, high contrast and responsive layout, following
+ * recommendations from WebAIM’s accessibility guidelines【563837205549645†L63-L115】.
+ */
+
 :root {
-  --background: #FDF5E6;
-  --text: #222222;
-  --header-bg: #002E86;
-  --primary: #C1272D;
-  --secondary: #F2721D;
-  --link: #002E86;
-  --link-hover: #AA1F2F;
-  --surface: #FFFFFF;
-  --shadow: rgba(0, 0, 0, 0.1);
+  /* Colour palette based on PolyStation's poster */
+  --background: #FDF5E6;        /* Creamy background for warmth and readability */
+  --text: #222222;             /* Near‑black for high contrast */
+  --header-bg: #002E86;        /* Deep blue for header and footer */
+  --primary: #C1272D;          /* Rich red for headings and buttons */
+  --secondary: #F2721D;        /* Bright orange for highlights and hovers */
+  --link: #002E86;             /* Dark blue for standard links */
+  --link-hover: #AA1F2F;       /* Dark red for link hover/focus states */
+  --surface: #FFFFFF;         /* Light surface for cards */
+  --shadow: rgba(0, 0, 0, 0.1); /* Subtle shadow colour for cards */
 }
 
-/* Base */
+/* Base styles */
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
@@ -19,7 +31,7 @@ body {
   line-height: 1.6;
 }
 
-/* Skip link */
+/* Skip link for keyboard navigation */
 .skip-link {
   position: absolute;
   top: -40px;
@@ -35,20 +47,16 @@ body {
   top: 0;
 }
 
-/* Header */
+/* Header and navigation */
 header {
   background-color: var(--header-bg);
-  color: white;
+  color: #ffffff;
   padding: 1rem;
-  text-align: center;
-  position: sticky;
-  top: 0;
-  z-index: 999;
 }
 
 header h1 {
   margin: 0;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 nav {
@@ -59,7 +67,7 @@ nav {
 }
 
 nav a {
-  color: white;
+  color: #ffffff;
   margin: 0 1rem;
   text-decoration: none;
   padding: 0.25rem 0;
@@ -73,57 +81,6 @@ nav a:hover,
 nav a:focus {
   text-decoration: underline;
   color: var(--secondary);
-}
-
-/* Hero section with background image in root folder */
-.hero {
-  position: relative;
-  color: #ffffff;
-  padding: 6rem 1rem;
-  text-align: center;
-  overflow: hidden;
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('hero.png'); /* ✅ File is in the root folder */
-  background-size: cover;
-  background-position: center;
-  filter: brightness(0.8);
-  z-index: -2;
-}
-
-.hero::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: -1;
-}
-
-.hero h2 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.hero p {
-  color: #f5e9dc;
-  font-size: 1.2rem;
-  max-width: 700px;
-  margin: 0 auto 1.5rem auto;
-}
-
-.hero .button {
-  margin: 0.5rem;
-  padding: 0.75rem 1.5rem;
 }
 
 /* Main content */
@@ -145,10 +102,21 @@ h1, h2, h3, h4 {
   margin-bottom: 0.5rem;
 }
 
-h1 { font-size: 2.5rem; }
-h2 { font-size: 2rem; }
-h3 { font-size: 1.5rem; }
-h4 { font-size: 1.3rem; }
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
 
 p, li {
   font-size: 1rem;
@@ -186,6 +154,164 @@ a:focus {
   background-color: var(--secondary);
 }
 
+/*
+ * Custom sections and components
+ *
+ * The following classes add more visual interest to the site. They include
+ * a hero section with a decorative background, card components for
+ * modular content areas, a grid layout for cards, enhanced testimonials
+ * styling, and a coloured newsletter call‑to‑action. These changes
+ * provide visual identity while respecting accessibility: text is high
+ * contrast and backgrounds are subdued or darkened for readability【563837205549645†L97-L103】.
+ */
+
+/* Hero section with decorative background image */
+.hero {
+  position: relative;
+  color: #ffffff;
+  padding: 6rem 1rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('images/hero.png');
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.8);
+  z-index: -2;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.hero p {
+  color: #f5e9dc;
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 1.5rem auto;
+}
+
+.hero .button {
+  margin: 0.5rem;
+  padding: 0.75rem 1.5rem;
+}
+
+/* Card component */
+.card {
+  background-color: var(--surface);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px var(--shadow);
+}
+
+/* Card grid layout */
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.card-grid .card {
+  flex: 1 1 calc(33% - 2rem);
+  min-width: 260px;
+}
+
+/* Testimonials styling */
+.testimonials blockquote {
+  background-color: var(--surface);
+  border-left: 4px solid var(--primary);
+  box-shadow: 0 2px 6px var(--shadow);
+  margin: 1rem 0;
+  padding: 1rem 1.5rem;
+  color: var(--text);
+}
+
+.testimonials blockquote cite {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+/* Newsletter section */
+.newsletter {
+  background-color: var(--header-bg);
+  color: #ffffff;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.newsletter p {
+  color: #f5e9dc;
+  margin-bottom: 1rem;
+}
+
+/* Blockquotes for testimonials */
+blockquote {
+  border-left: 4px solid var(--secondary);
+  margin: 1rem 0;
+  padding-left: 1rem;
+  font-style: italic;
+  color: var(--text);
+}
+
+blockquote cite {
+  display: block;
+  margin-top: 0.5rem;
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* Forms */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  margin-top: 0.25rem;
+  font-size: 1rem;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--primary);
+  outline: 2px solid var(--secondary);
+}
+
 /* Footer */
 footer {
   background-color: var(--header-bg);
@@ -205,21 +331,15 @@ footer a:focus {
   text-decoration: none;
 }
 
-/* Responsive */
+/* Responsive adjustments */
 @media (max-width: 600px) {
   header h1 {
     font-size: 1.75rem;
   }
-
   nav a {
     margin: 0 0.5rem;
   }
-
   h2 {
     font-size: 1.5rem;
-  }
-
-  .hero h2 {
-    font-size: 2rem;
   }
 }
