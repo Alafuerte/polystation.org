@@ -188,7 +188,7 @@ a:focus {
   background-image: url('hero.png');
   background-size: cover;
   background-position: center;
-  filter: brightness(0.1);
+  filter: brightness(0.9);
   z-index: -2;
 }
 
