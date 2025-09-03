@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About – PolyStation</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <header>
+    <h1>PolyStation</h1>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html" aria-current="page">About</a>
+      <a href="coaching.html">Coaching</a>
+      <a href="events.html">Events</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main id="main-content">
+    <!-- Hero for About page -->
+    <section class="hero" role="img" aria-label="Abstract swirling shapes decorative background">
+      <h2>About PolyStation</h2>
+      <p>Rethinking relationships beyond conventional norms.</p>
+    </section>
+
+    <!-- Mission and Values -->
+    <section class="card-grid" aria-labelledby="mission-values">
+      <div class="card">
+        <h3 id="mission-values">Our Mission</h3>
+        <p>PolyStation is a movement and community space dedicated to radically rethinking how we relate to one another. Our mission is to challenge the structures of monogamy, individualism and capitalist‑driven isolation by promoting models of connection rooted in ethical non‑monogamy, collective care and chosen kinship. We believe that building positive, diverse relationships can contribute to a more connected and just society.</p>
+      </div>
+      <div class="card">
+        <h3>Our Values</h3>
+        <ul>
+          <li><strong>Inclusivity:</strong> welcoming all genders, sexualities and relationship styles.</li>
+          <li><strong>Honesty:</strong> fostering open communication and trust.</li>
+          <li><strong>Agency:</strong> empowering people to define their own connections.</li>
+          <li><strong>Community:</strong> building networks of support and shared resources.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Facilitators -->
+    <section>
+      <h3>Our Facilitators</h3>
+      <div class="card-grid">
+        <div class="card">
+          <h4>Angel Perez</h4>
+          <p>Angel is an inclusion specialist and coach with a background in sociology, queer studies and creative writing. He has practised non‑monogamy for many years and offers <a href="https://github.com/polystation-hq/polystation.org/raw/main/ENM%20Coaching.pdf" target="_blank" rel="noopener">ethical non‑monogamy coaching</a> for individuals and groups. He also runs the queer club night Gayzpacho and is a father of two.</p>
+          <p>Connect via <a href="https://www.instagram.com/theboywithwings" target="_blank" rel="noopener">Instagram</a> or <a href="https://asamper.com" target="_blank" rel="noopener">Asamper Inclusion</a>.</p>
+        </div>
+        <div class="card">
+          <h4>Sion Jones</h4>
+          <p>Sion is a community engagement specialist and workshop facilitator passionate about rethinking relationships. He encourages open discussion of often taboo topics and believes sharing experiences helps individuals navigate their own journeys.</p>
+          <p>Follow Sion on <a href="https://www.instagram.com/sion.eryl" target="_blank" rel="noopener">Instagram</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to action -->
+    <section class="newsletter">
+      <h3>Get Involved</h3>
+      <p>We invite you to join our community, attend events, or book a coaching session. Whether you are exploring non‑monogamy or simply curious, your voice and presence are welcome.</p>
+      <p>
+        <a href="coaching.html" class="button">Explore Coaching</a>
+        <a href="events.html" class="button">View Events</a>
+      </p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; <span id="year"></span> PolyStation. All rights reserved.</p>
+    <p>
+      Follow us on
+      <a href="https://www.instagram.com/polystation_HQ" target="_blank" rel="noopener">Instagram</a>
+      |
+      <a href="mailto:hello@polystation.org">Email us</a>
+    </p>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

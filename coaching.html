@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coaching – PolyStation</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <header>
+    <h1>PolyStation</h1>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="coaching.html" aria-current="page">Coaching</a>
+      <a href="events.html">Events</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main id="main-content">
+    <!-- Hero section introduces the coaching page with a decorative background -->
+    <section class="hero" role="img" aria-label="Abstract swirling decorative background">
+      <h2>Coaching &amp; Support</h2>
+      <p>Guidance for your journey into ethical non‑monogamy</p>
+    </section>
+
+    <!-- Coaching offerings presented in cards -->
+    <section>
+      <h2>Our Coaching Offerings</h2>
+      <p>We provide compassionate, personalised support to help you navigate relationships beyond monogamy. Choose the format that fits your needs.</p>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Individual Coaching</h3>
+          <p>Personalised sessions exploring your relationship goals and challenges. We help you understand your needs, set healthy boundaries and communicate effectively.</p>
+        </div>
+        <div class="card">
+          <h3>Assemblage Coaching</h3>
+          <p>Sessions for partners, metamours or chosen family to build understanding, negotiate agreements and foster mutual support.</p>
+        </div>
+        <div class="card">
+          <h3>Sliding Scale Pricing</h3>
+          <p>We operate on a sliding scale to make coaching accessible. Your ability to pay should not be a barrier to getting support. Contact us to discuss rates and find a plan that works for you.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- What to expect and policies -->
+    <section>
+      <h3>What to Expect</h3>
+      <p>Our sessions focus on creating a non‑judgmental space where you can be honest about your desires and challenges. We use tools such as reflective listening, values exploration and customised exercises to help you thrive in your relationships.</p>
+    </section>
+    <section>
+      <h3>Policies &amp; Confidentiality</h3>
+      <p>Your privacy is important to us. Coaching sessions are confidential and tailored to your comfort level. We respect all identities and relationship structures.</p>
+    </section>
+
+    <!-- Call to action to book a free call -->
+    <section class="newsletter">
+      <h3>Ready to Begin?</h3>
+      <p>Want to find out if coaching is right for you? Book a free introductory call to meet our facilitators and discuss your needs.</p>
+      <p><a href="mailto:hello@polystation.org?subject=Free%20Coaching%20Consultation" class="button">Book a Free Call</a></p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; <span id="year"></span> PolyStation. All rights reserved.</p>
+    <p>
+      Follow us on
+      <a href="https://www.instagram.com/polystation_HQ" target="_blank" rel="noopener">Instagram</a>
+      |
+      <a href="mailto:hello@polystation.org">Email us</a>
+    </p>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

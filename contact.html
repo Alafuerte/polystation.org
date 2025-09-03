@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – PolyStation</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <header>
+    <h1>PolyStation</h1>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="coaching.html">Coaching</a>
+      <a href="events.html">Events</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </header>
+  <main id="main-content">
+    <!-- Hero section introducing the contact page -->
+    <section class="hero" role="img" aria-label="Abstract swirling decorative background">
+      <h2>Contact Us</h2>
+      <p>We'd love to hear from you</p>
+    </section>
+
+    <!-- Contact form and connection options presented in a card grid -->
+    <section class="card-grid">
+      <div class="card">
+        <h3>Get in Touch</h3>
+        <p>We would love to hear from you. Send us a message to ask about coaching sessions, workshops, events or to share your feedback.</p>
+        <!-- This form uses the mailto protocol to compose an email. For more robust handling you may choose a backend service. -->
+        <form action="mailto:hello@polystation.org" method="post" enctype="text/plain">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+
+          <button type="submit" class="button">Send Message</button>
+        </form>
+      </div>
+      <div class="card">
+        <h3>Stay Connected</h3>
+        <p>Follow us on social media and join our mailing list for updates.</p>
+        <p><a href="https://www.instagram.com/polystation_HQ" target="_blank" rel="noopener">Instagram: @Polystation_HQ</a></p>
+        <p>Subscribe to our mailing list:</p>
+        <script async src="https://eocampaign1.com/form/51add2b8-16ae-11f0-8132-8169a6a81f23.js" data-form="51add2b8-16ae-11f0-8132-8169a6a81f23"></script>
+        <p style="font-size: 0.9rem;">We respect your privacy. Unsubscribe at any time.</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; <span id="year"></span> PolyStation. All rights reserved.</p>
+    <p>
+      Follow us on
+      <a href="https://www.instagram.com/polystation_HQ" target="_blank" rel="noopener">Instagram</a>
+      |
+      <a href="mailto:hello@polystation.org">Email us</a>
+    </p>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

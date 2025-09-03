@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events – PolyStation</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <header>
+    <h1>PolyStation</h1>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="coaching.html">Coaching</a>
+      <a href="events.html" aria-current="page">Events</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main id="main-content">
+    <!-- Hero section introduces the events page with decorative background -->
+    <section class="hero" role="img" aria-label="Abstract swirling decorative background">
+      <h2>Events &amp; Workshops</h2>
+      <p>Gather · Explore · Connect</p>
+    </section>
+
+    <!-- Upcoming events presented in cards -->
+    <section>
+      <h2>Upcoming Events</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>PolyStation: Redefining Relationships</h3>
+          <p><strong>Date:</strong> Saturday, 21 June 2025 · 7:00 PM – 9:00 PM</p>
+          <p><strong>Location:</strong> The Common Press, 118 Bethnal Green Road, London, E2 6DG</p>
+          <p>Join us for an evening of conversation and community as we explore non‑monogamy and connection. Everyone is welcome.</p>
+          <p><a href="https://www.outsavvy.com/event/26182/polystation-redefining-relationships" class="button" target="_blank" rel="noopener">Register on OutSavvy</a></p>
+        </div>
+        <div class="card">
+          <h3>EDGE Festival Workshop – Intimacy &amp; Belonging</h3>
+          <p><strong>Date:</strong> Saturday, 3 May 2025</p>
+          <p><strong>Location:</strong> Edge Festival 2025</p>
+          <p>We’re excited to run a workshop at <strong>EDGE Festival</strong>, a festival exploring connection, intimacy and queer belonging. Our session will guide you through building intimacy beyond traditional scripts.</p>
+          <p><a href="https://www.lovingmen.org/events/edge2025" class="button" target="_blank" rel="noopener">Learn More</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Past events and mailing list call to action -->
+    <section>
+      <h2>Past Events</h2>
+      <p>We regularly host discussions, socials and educational workshops. Join our mailing list to stay informed about future gatherings and to receive updates.</p>
+    </section>
+    <section class="newsletter">
+      <h3>Stay Informed</h3>
+      <p>Subscribe to our mailing list to get updates on upcoming events and workshops.</p>
+      <script async src="https://eocampaign1.com/form/51add2b8-16ae-11f0-8132-8169a6a81f23.js" data-form="51add2b8-16ae-11f0-8132-8169a6a81f23"></script>
+      <p style="font-size: 0.9rem;">We respect your privacy. Unsubscribe at any time.</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; <span id="year"></span> PolyStation. All rights reserved.</p>
+    <p>
+      Follow us on
+      <a href="https://www.instagram.com/polystation_HQ" target="_blank" rel="noopener">Instagram</a>
+      |
+      <a href="mailto:hello@polystation.org">Email us</a>
+    </p>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
