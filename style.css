@@ -158,7 +158,7 @@ a:focus {
 .button:focus {
   background-color: var(--secondary);
 }
-.white-heading {
+.white-heading {  /* This is the heading of the blue boxes in every page */
   color: #FFFFFF;   /* White */
 }
 
