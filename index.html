@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -61,3 +63,86 @@
   }
   </script>
 </head>
+<body>
+  <!-- Skip link allows keyboard users to bypass navigation【563837205549645†L86-L90】 -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <header>
+    <h1>PolyStation</h1>
+    <nav aria-label="Main navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="about.html">About</a>
+      <a href="coaching.html">Coaching</a>
+      <a href="events.html">Events</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main id="main-content">
+    <!-- Hero section introduces the site and includes clear calls to action【224223432262109†L98-L124】 -->
+    <section class="hero" role="img" aria-label="Abstract swirling shapes in blue, red and orange">
+      <h2>Reimagining Relationships</h2>
+      <p>Welcome to PolyStation: a London-based community space dedicated to non‑monogamy, collective care and chosen kinship.</p>
+      <p>
+        <a href="events.html" class="button">See Events</a>
+        <a href="coaching.html" class="button">Book a Coaching Session</a>
+      </p>
+    </section>
+
+    <!-- Offerings section using cards -->
+    <section>
+      <h2>What We Do</h2>
+      <p>PolyStation is a one-stop social space dedicated to exploring how we connect with others and finding new ways of building positive and diverse relationship models. We run community events, workshops and provide coaching for people exploring polyamory, and ENM in general. Whether you are new to ethical non‑monogamy, questioning, opening up or simply curious, our inclusive space welcomes people to learn, share and grow.</p>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Events</h3>
+          <p>Monthly meet-ups and gatherings to connect with others in a safe, inclusive environment.</p>
+          <p><a href="events.html" class="button">See Calendar</a></p>         
+        </div>
+        <div class="card">
+          <h3>Workshops</h3>
+          <p>Interactive half-day group sessions on topics like communication, boundaries and building kinship.</p>
+          <p><a href="events.html" class="button">Upcoming Workshops</a></p>
+        </div>
+        <div class="card">
+           <h3>Coaching</h3>
+          <p>One‑to‑one and polycule support to help you navigate ethical non‑monogamy.</p>
+          <p><a href="coaching.html" class="button">Learn More</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials section -->
+    <section class="testimonials">
+      <h2>Testimonials</h2>
+      <blockquote>
+        <p>“Attending Polystation gave me the tools to communicate better in my relationships and connect with a likeminded community.”</p>
+        <cite>– Workshop participant</cite>
+      </blockquote>
+      <blockquote>
+        <p>“The coaching sessions were transformative and compassionate. I felt seen and supported.”</p>
+        <cite>– Coaching client</cite>
+      </blockquote>
+    </section>
+
+    <!-- Mailing list call to action -->
+    <section class="newsletter">
+      <h2>Join Our Mailing List</h2>
+      <p>Stay up to date with our latest events, resources and community updates.</p>
+      <script async src="https://eocampaign1.com/form/51add2b8-16ae-11f0-8132-8169a6a81f23.js" data-form="51add2b8-16ae-11f0-8132-8169a6a81f23"></script>
+      <p style="font-size: 0.9rem;">We respect your privacy. You can unsubscribe at any time.</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; <span id="year"></span> PolyStation. All rights reserved.</p>
+    <p>
+      Follow us on
+      <a href="https://www.instagram.com/polystation_HQ" target="_blank" rel="noopener">Instagram</a>
+      |
+      <a href="mailto:hello@polystation.org">Email us</a>
+    </p>
+  </footer>
+  <script>
+    // Update the year automatically
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
