@@ -391,10 +391,10 @@ footer a:visited {
 /* Hover/focus: brighter but still accessible; add visible focus */
 footer a:hover,
 footer a:focus-visible {
-  color: #FFEB3B;                 /* Yellow on navy passes contrast easily */
+  color: #AA1F2F;                 /* Yellow on navy passes contrast easily */
   outline: 2px solid currentColor;
   outline-offset: 2px;
-  text-decoration-thickness: 2px; /* Slightly bolder underline on hover/focus */
+  text-decoration-thickness: 1px; /* Slightly bolder underline on hover/focus */
 }
 
 /* Optional: separators are dim but readable against navy */
