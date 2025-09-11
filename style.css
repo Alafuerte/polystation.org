@@ -158,6 +158,9 @@ a:focus {
 .button:focus {
   background-color: var(--secondary);
 }
+.white-heading {
+  color: #FFFFFF;   /* White */
+}
 
 /*
  * Custom sections and components
