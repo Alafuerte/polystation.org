@@ -369,3 +369,37 @@ footer a:focus {
   margin: 0 auto 1rem auto;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
+/* Footer container */
+footer {
+  background: #002E86;           /* Navy */
+  color: #FFFFFF;                 /* High-contrast text */
+}
+
+/* Footer links: meet 4.5:1 by using white + underline (don’t rely on color alone) */
+footer a {
+  color: #FFFFFF;                 /* Same color as text keeps contrast ≥ 7:1 */
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-weight: 600;               /* Improves readability */
+}
+
+/* Visited state stays accessible */
+footer a:visited {
+  color: #E6E6E6;                 /* Still ≥ 4.5:1 vs navy */
+}
+
+/* Hover/focus: brighter but still accessible; add visible focus */
+footer a:hover,
+footer a:focus-visible {
+  color: #FFEB3B;                 /* Yellow on navy passes contrast easily */
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+  text-decoration-thickness: 2px; /* Slightly bolder underline on hover/focus */
+}
+
+/* Optional: separators are dim but readable against navy */
+footer nav {
+  color: #C8D4FF;                 /* Muted separators/pipe characters */
+  font-size: 0.9375rem;           /* ~15px for comfortable reading */
+  line-height: 1.6;
+}
