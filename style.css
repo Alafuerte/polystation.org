@@ -370,36 +370,35 @@ footer a:focus {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 /* ===========================
-   Footer (Dark Theme)
+   Footer (Dark Theme) – match header nav style
    =========================== */
 footer {
-  background: #002E86;           /* Navy */
-  color: #FFFFFF;                 /* High-contrast text */
+  background: #002E86;    /* Navy */
+  color: #FFFFFF;
   padding: 1.5rem;
   text-align: center;
 }
 
-footer a {
-  color: #FFFFFF;                 /* White links */
-  text-decoration: underline;
-  text-underline-offset: 2px;
-  font-weight: 600;
-  transition: all 0.2s ease;      /* Smooth hover effect */
+footer nav {
+  margin-bottom: 0.5rem;
+  font-size: 0.9375rem;   /* ~15px */
+  line-height: 1.6;
 }
 
-footer a:visited {
-  color: #E6E6E6;                 /* Light grey, still accessible */
+footer a {
+  color: #FFFFFF;         /* White links, same as header */
+  text-decoration: none;  /* Match header nav: no underline */
+  margin: 0 0.25rem;
+  transition: color 0.2s ease;
+  font-weight: 600;
 }
 
 footer a:hover,
 footer a:focus-visible {
-  color: #FF5C8A;                 /* Pink/red highlight */
-  text-decoration-thickness: 3px; /* Thicker underline on hover/focus */
+  color: #FFCDD2;         /* Soft, light red highlight (subtle, passes WCAG) */
 }
 
-footer nav {
-  color: #C8D4FF;                 /* Muted separators */
-  font-size: 0.9375rem;           /* ~15px */
-  line-height: 1.6;
-  margin-bottom: 0.5rem;
+footer a:visited {
+  color: #E6E6E6;         /* Accessible light grey */
 }
+
