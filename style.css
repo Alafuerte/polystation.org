@@ -395,7 +395,8 @@ footer a {
 
 footer a:hover,
 footer a:focus-visible {
-  color: #FFCDD2;         /* Soft, light red highlight (subtle, passes WCAG) */
+color: #FFCDD2;         /* Soft, light red highlight (subtle, passes WCAG) */
+text-decoration-thickness: 3px; /* Thicker underline on hover/focus */
 }
 
 footer a:visited {
