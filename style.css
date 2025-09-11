@@ -369,37 +369,37 @@ footer a:focus {
   margin: 0 auto 1rem auto;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
-/* Footer container */
+/* ===========================
+   Footer (Dark Theme)
+   =========================== */
 footer {
   background: #002E86;           /* Navy */
   color: #FFFFFF;                 /* High-contrast text */
+  padding: 1.5rem;
+  text-align: center;
 }
 
-/* Footer links: meet 4.5:1 by using white + underline (don’t rely on color alone) */
 footer a {
-  color: #FFFFFF;                 /* Same color as text keeps contrast ≥ 7:1 */
+  color: #FFFFFF;                 /* White links */
   text-decoration: underline;
   text-underline-offset: 2px;
-  font-weight: 600;               /* Improves readability */
+  font-weight: 600;
+  transition: all 0.2s ease;      /* Smooth hover effect */
 }
 
-/* Visited state stays accessible */
 footer a:visited {
-  color: #E6E6E6;                 /* Still ≥ 4.5:1 vs navy */
+  color: #E6E6E6;                 /* Light grey, still accessible */
 }
 
-/* Hover/focus: brighter but still accessible; add visible focus */
 footer a:hover,
 footer a:focus-visible {
-  color: #AA1F2F;                 /* Yellow on navy passes contrast easily */
-  outline: 2px solid currentColor;
-  outline-offset: 2px;
-  text-decoration-thickness: 1px; /* Slightly bolder underline on hover/focus */
+  color: #FF5C8A;                 /* Pink/red highlight */
+  text-decoration-thickness: 3px; /* Thicker underline on hover/focus */
 }
 
-/* Optional: separators are dim but readable against navy */
 footer nav {
-  color: #C8D4FF;                 /* Muted separators/pipe characters */
-  font-size: 0.9375rem;           /* ~15px for comfortable reading */
+  color: #C8D4FF;                 /* Muted separators */
+  font-size: 0.9375rem;           /* ~15px */
   line-height: 1.6;
+  margin-bottom: 0.5rem;
 }
