@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Accessibility Statement - PolyStation</title>
+  <meta name="description" content="Read the PolyStation Accessibility Statement: our commitment to an inclusive, usable and accessible website and community." />
+  <link rel="canonical" href="https://polystation.org/accessibility.html" />
+
+  <!-- Fonts & CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <header>
+    <h1>PolyStation</h1>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="coaching.html">Coaching</a>
+      <a href="events.html">Events</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section>
+      <h2>Accessibility</h2>
+      <p>
+        PolyStation is committed to making our website and community as inclusive and accessible as possible. 
+        We want everyone to be able to engage with our content and events, regardless of ability, device or context.
+      </p>
+    </section>
+
+    <section>
+      <h2>Measures We Take</h2>
+      <ul>
+        <li>Using clear headings, labels and navigation.</li>
+        <li>Providing descriptive alternative text for meaningful images.</li>
+        <li>Ensuring sufficient colour contrast for text and backgrounds.</li>
+        <li>Making all content accessible by keyboard.</li>
+        <li>Using semantic HTML to support screen readers.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Limitations</h2>
+      <p>
+        While we aim for a high level of accessibility, there may be some areas of the site or third-party integrations 
+        (such as ticketing or mailing list forms) that are not fully accessible. We continue to review and improve these where possible.
+      </p>
+    </section>
+
+    <section>
+      <h2>Feedback</h2>
+      <p>
+        If you experience barriers using our website, please let us know so we can improve.  
+        Email us at <a href="mailto:hello@polystation.org">hello@polystation.org</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <nav aria-label="Footer navigation">
+      <a href="index.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="events.html">Events</a> |
+      <a href="coaching.html">Coaching</a> |
+      <a href="contact.html">Contact</a> 
+    </nav>
+
+    <p>&copy; <span id="year"></span> PolyStation. All rights reserved.</p>
+    <p>
+      Follow us on
+      <a href="https://www.instagram.com/polystation_hq/" target="_blank" rel="noopener">Instagram</a>
+      |
+      <a href="mailto:hello@polystation.org">Email us</a>
+      |
+      <a href="accessibility.html" aria-current="page">Accessibility</a>
+    </p>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

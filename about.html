@@ -2,12 +2,46 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About – PolyStation</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>About – PolyStation</title>
+<meta name="description" content="Learn about PolyStation’s mission, values, and facilitators creating inclusive spaces for non-monogamy, connection and community." />
+<link rel="canonical" href="https://www.polystation.org/about.html" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.polystation.org/about.html" />
+<meta property="og:title" content="About – PolyStation" />
+<meta property="og:description" content="Our mission, values and facilitators reimagining relationships and chosen kinship." />
+<meta property="og:image" content="https://www.polystation.org/hero.png" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="About – PolyStation" />
+<meta name="twitter:description" content="Meet the people and principles behind PolyStation." />
+<meta name="twitter:image" content="https://www.polystation.org/hero.png" />
+
+<link rel="stylesheet" href="/style.css" />  
+
+<!-- Person schema for Angel (add Sion similarly if you like) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Angel Perez",
+  "jobTitle": "Relational Coach & Facilitator",
+  "url": "https://www.polystation.org/about.html",
+  "sameAs": [
+    "https://www.instagram.com/theboywithwings",
+    "https://asamper.com"
+  ],
+  "worksFor": {
+    "@type": "Organization",
+    "name": "PolyStation",
+    "url": "https://www.polystation.org/"
+  }
+}
+</script>
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -53,13 +87,14 @@
         <div class="card">
           <img src="angel.jpg" alt="Portrait of Angel Perez" class="profile-pic" />
           <h4>Angel Perez</h4>
-          <p>Angel is a relational coach, inclusion specialist and founder of PolyStation, creating queer-inclusive spaces to rethink how we love, care and belong. Drawing on lived experience of polyamory and years of community and inclusion work, Angel developed a values-based coaching methodology that helps individuals and groups shift their way of relating to others and themselves.</p> 
-          <p>Angel has a background in sociology, queer studies, ontological coaching and creative writing. In his approach he blends attachment-informed, trauma-aware practice with critical thinking and playful creativity. Angel works with individuals, couples/polycules, families, groups and workplace teams, offering 1:1 <a href="https://www.polystation.org/coaching.html" target="_blank" rel="noopener">coaching and workshops</a>. He is also a proud father of two and runs a cabaret club night called Gayzpacho.</p>
+          <p>Angel is a relational coach, inclusion specialist and founder of PolyStation, creating queer-inclusive spaces to rethink how we relate, care and belong. He has a background in sociology, queer studies, ontological coaching and creative writing. He is also a proud father of two and in his spare time he runs a queer club night called <a href="https://www.gayzpacho.com/" target="_blank" rel="noopener">Gayzpacho</a>.</p> 
+          <p>Drawing on lived experience of polyamory, educational training and years of community and inclusion work, Angel has developed a values-based coaching methodology that helps individuals and groups shift their way of relating to others and themselves. In his approach he blends attachment-informed, trauma-aware ontological practice with critical thinking and playful creativity.</p> 
+          <p>Angel offers <a href="https://www.polystation.org/coaching.html" target="_blank" rel="noopener">coaching and workshops</a> for individuals, couples/polycules, families and teams.</p>
           <p>Connect via <a href="https://www.instagram.com/theboywithwings" target="_blank" rel="noopener">Instagram</a></p>
         </div>
         <div class="card">
           <h4>Sion Jones</h4>
-          <p>Sion is a community engagement specialist and workshop facilitator passionate about rethinking relationships. He encourages open discussion of often taboo topics and believes sharing experiences helps individuals navigate their own journeys.</p>
+          <p>Sion, the other founder, is a community engagement specialist and workshop facilitator passionate about rethinking relationships. He encourages open discussion of often taboo topics and believes sharing experiences helps individuals navigate their own journeys.</p>
           <p>Follow Sion on <a href="https://www.instagram.com/sion.eryl" target="_blank" rel="noopener">Instagram</a>.</p>
         </div>
       </div>
@@ -67,7 +102,7 @@
 
     <!-- Call to action -->
     <section class="newsletter">
-      <h3>Get Involved</h3>
+      <h3 class="white-heading">Get Involved</h3>
       <p>We invite you to join our community, attend events, or book a coaching session. Whether you are exploring non‑monogamy or simply curious, your voice and presence are welcome.</p>
       <p>
         <a href="coaching.html" class="button">Explore Coaching</a>
@@ -75,13 +110,23 @@
       </p>
     </section>
   </main>
-  <footer>
+<footer>
+    <nav aria-label="Footer navigation">
+      <a href="index.html">Home</a> |
+      <a href="about.html" aria-current="page">About</a> |
+      <a href="events.html">Events</a> |
+      <a href="coaching.html">Coaching</a> |
+      <a href="contact.html">Contact</a> 
+    </nav>
+
     <p>&copy; <span id="year"></span> PolyStation. All rights reserved.</p>
     <p>
       Follow us on
-      <a href="https://www.instagram.com/polystation_HQ" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.instagram.com/polystation_hq/" target="_blank" rel="noopener">Instagram</a>
       |
       <a href="mailto:hello@polystation.org">Email us</a>
+      |
+      <a href="accessibility.html">Accessibility</a>
     </p>
   </footer>
   <script>
