@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Event Guidelines – PolyStation</title>
+  <meta name="description" content="PolyStation event guidelines for inclusive, respectful and curious participation." />
+  <link rel="canonical" href="https://www.polystation.org/guidelines.html" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Optional structured data for this page -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebPage",
+    "name":"PolyStation Event Guidelines",
+    "url":"https://www.polystation.org/guidelines.html",
+    "description":"Community guidelines for PolyStation events: inclusive, respectful and curiosity-led participation."
+  }
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header>
+    <h1>PolyStation</h1>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="coaching.html">Coaching</a>
+      <a href="events.html">Events</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" role="img" aria-label="Abstract decorative background">
+      <h2>Event Guidelines</h2>
+      <p>Creating a space that’s inclusive, curious and compassionate.</p>
+    </section>
+
+    <section>
+      <h2>Poly Station Guidelines</h2>
+      <ol>
+        <li><strong>Every contribution is valuable</strong> – No one perspective is more important than another; all voices matter.</li>
+        <li><strong>Respect for backgrounds and personal stories</strong> – We engage with empathy, recognising that everyone brings unique experiences.</li>
+        <li><strong>Listen with curiosity and an open mind</strong> – We seek to understand, not to debate or convince.</li>
+        <li><strong>A space for thought experimentation</strong> – Poly Station is a place to freely explore ideas.</li>
+        <li><strong>Speak without judgement</strong> – We contribute in ways that foster learning and connection, avoiding language that makes others feel inadequate.</li>
+        <li><strong>Avoid rigid labels</strong> – We resist boxing people into fixed identities, embracing fluidity and self-definition.</li>
+        <li><strong>Honour change and growth</strong> – People evolve, and we respect everyone’s capacity for transformation.</li>
+        <li><strong>Accept conversational flow</strong> – When discussions reach an impasse due to differing views, we acknowledge it and move on.</li>
+        <li><strong>Inclusive for all</strong> – Everyone is welcome, regardless of gender, sexual identity or relationship style.</li>
+        <li><strong>This is not therapy</strong> – Poly Station is a space for discussion, learning and community, not a substitute for professional mental health support. While some may find participation reflective or healing, our conversations are not facilitated as therapy sessions.</li>
+      </ol>
+      <p>If anything feels off for you during an event, please talk to a facilitator or email <a href="mailto:hello@polystation.org">hello@polystation.org</a>. Your comfort and safety matter.</p>
+    </section>
+
+    <section class="newsletter" aria-labelledby="stay-connected">
+      <h3 id="stay-connected">Stay Connected</h3>
+      <p>For upcoming workshops and community news, join our mailing list.</p>
+      <script async src="https://eocampaign1.com/form/51add2b8-16ae-11f0-8132-8169a6a81f23.js" data-form="51add2b8-16ae-11f0-8132-8169a6a81f23"></script>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> PolyStation. All rights reserved.</p>
+    <p>
+      Follow us on
+      <a href="https://www.instagram.com/polystation_HQ" target="_blank" rel="noopener">Instagram</a>
+      |
+      <a href="mailto:hello@polystation.org">Email us</a>
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
